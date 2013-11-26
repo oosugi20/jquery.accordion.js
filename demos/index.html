@@ -4,9 +4,16 @@
 <meta charset="utf-8">
 <title>jquery.accordion.js Sample</title>
 <script src="../lib/jquery.js"></script>
-<script src="../dest/jquery.accordion.js"></script>
+<script src="../dist/jquery.accordion.js"></script>
 <style>
 [data-accordion] {
+	overflow: hidden;
+}
+[data-accordion-item] {
+	float: left;
+	width: 200px;
+	background: #FCC;
+	border: 1px solid #666;
 }
 </style>
 <script>
@@ -17,6 +24,28 @@ $(function () {
 </head>
 
 <body>
-<div data-accordion></div>
+<div data-accordion>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50">
+hoge
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50" data-accordion-initopen>
+hoge
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="80">
+hoge 80
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50">
+hoge
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50">
+hoge
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50">
+hoge
+</div>
+<div data-accordion-item data-accordion-openedwidth="200" data-accordion-closedwidth="50">
+hoge
+</div>
+</div>
 </body>
 </html>
